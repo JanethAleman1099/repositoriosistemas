@@ -1,4 +1,3 @@
-<?php
 msqli_connect('ubuntu24','root','12345') or die("Error al conectar " . mysqli_error());
 mysqli_select_db($c,'Personas'); or die ("Error al seleccionar la Base de datos: " . mysqli_error());
 $result = mysqli_query("SELECT * from Amistades where Usuario='" . $uactual . "' AND Amigo='". $usuario."'");
